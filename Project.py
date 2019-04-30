@@ -17,9 +17,7 @@ def random_word(level):
     elif level == "Medium":
         file = open("meaning_four.txt") # opening the file containing four letter words
         victory =4
-    elif level == "Hard":
-        file = open("meaning_five.txt") # opening the file containing three letter words
-        victory = 5
+    
 
     words = file.read().splitlines()# make all the three letter words to the list
     word = r.choice(words)# generating a random word from the list
