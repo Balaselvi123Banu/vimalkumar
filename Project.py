@@ -45,7 +45,11 @@ def start():
     return render_template("firstpage.html")
 
 
-
+@app.route('/singleplayer',methods = ['post'])
+def select():
+    details = request.form
+    select = details['select']
+    return render_template("levels.html")
 
 @app.route('/level',methods = ['post'])
 def level():
